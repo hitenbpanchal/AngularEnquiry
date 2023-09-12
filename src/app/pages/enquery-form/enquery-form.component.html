@@ -1,0 +1,160 @@
+<div class="container-fluid header">
+    <app-header></app-header>
+</div>
+  <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins bodi">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">Enquiry Form</h2>
+                    <form method="" (ngSubmit)="enquerySubmit()">
+                        <!-- <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">First Name</label>
+                                    <input class="input--style-4" type="text" name="first_name">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Last Name</label>
+                                    <input class="input--style-4" type="text" name="last_name">
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="input-group">
+                            <label class="label">Name</label>
+                            <input class="input--style-4" id="name" name="name" [(ngModel)]="enquery.name" type="text" required>
+                        </div>
+                        <div class="input-group">
+                            <label class="label">Email</label>
+                            <input class="input--style-4" id="email" name="email" [(ngModel)]="enquery.email" type="email" required>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="DOB">Date Of Birth</label>
+                                    <div class="input-group-icon">
+                                        <input class="input--style-4" type="text" name="dob" id="dob" [(ngModel)]="enquery.dob" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Gender</label>
+                                    <div class="p-t-10">
+                                        <label class="radio-container m-r-45">Male
+                                            <input type="radio" checked="checked" name="gender">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">Female
+                                            <input type="radio" name="gender">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Address</label>
+                                    <input class="input--style-4" id="address" name="address" [(ngModel)]="enquery.address" type="text" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Contact No.</label>
+                                    <input class="input--style-4" id="contactNo" name="contactNo"  [(ngModel)]="enquery.contactNo" type="text" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label class="label">College Name</label>
+                            <input class="input--style-4" id="collegeName" name="collegeName" [(ngModel)]="enquery.collegeName"  type="text"required>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Qualification</label>
+                                    <input class="input--style-4" id="qualification" name="qualification" [(ngModel)]="enquery.qualification" type="text" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Passing Year</label>
+                                    <input class="input--style-4" id="passOutYear" name="passOutYear" [(ngModel)]="enquery.passOutYear" type="text" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Current Job Title</label>
+                                    <input class="input--style-4" id="currentJobTitle" name="currentJobTitle" [(ngModel)]="enquery.currentJobTitle" type="text" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Experience</label>
+                                    <input class="input--style-4" id="experience" name="experience" [(ngModel)]="enquery.experience" type="number" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Course Name</label>
+                                    <input class="input--style-4" id="courseName" name="courseName" [(ngModel)]="enquery.courseName"  type="text" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">When you want to start?</label>
+                                    <input class="input--style-4" type="text" name="whenToStart" id="whenToStart" [(ngModel)]="enquery.whenToStart"  required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label class="label">Preffer Batch Time</label>
+                            <input class="input--style-4" type="text" id="batchTime" name="batchTime" [(ngModel)]="enquery.batchTime"  required>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Are you looing for placement?</label>
+                                    <div class="p-t-10">
+                                        <label class="radio-container m-r-45">Yes
+                                            <input type="radio" checked="checked" name="isPlacement" id="isPlacement" [(ngModel)]="enquery.isPlacement" name="isPlacement">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">No
+                                            <input type="radio" name="isPlacement">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Are you good in english?</label>
+                                    <div class="p-t-10">
+                                        <label class="radio-container m-r-45">Yes
+                                            <input type="radio" id="speakEnglish" name="speakEnglish" [(ngModel)]="enquery.speakEnglish" checked="checked" name="speakEnglish">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">No
+                                            <input type="radio" name="speakEnglish">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-t-15">
+                            <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>

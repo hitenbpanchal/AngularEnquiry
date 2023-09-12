@@ -1,0 +1,21 @@
+.form-label {
+    display: flex;
+    font-size: large;
+}
+
+.profile-form {
+    margin-top: 30px;
+    width: 50%;
+    position: absolute;
+    left: 500px;
+    background-color: #EDE7F6;
+}
+
+.submit-btn {
+    padding: 12px 30px;
+}
+
+h2 {
+    color: blueviolet;
+    margin-bottom: 10px;
+}

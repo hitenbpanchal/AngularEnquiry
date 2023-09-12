@@ -1,0 +1,24 @@
+
+<nav class="navbar navbar-expand navbar-dark bg-primary px-2" (click) = "SideNavToggle()">
+    <div class="side-nav-button p-2 me-3 text-light">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+  
+    <a class="navbar-brand px-4" href="#">Enquiry-Portal</a>
+  
+    <!-- Default dropstart button -->
+    <div class="btn-group dropdown ms-auto p-5 profile-logo">
+        <button type="button" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Dropstart
+        </button>
+        <div class="dropdown-menu dropdown-menu-dark">
+            <a *ngIf="!loginService.isLoggedIn()" routerLink="/signup" class="dropdown-item">Sign Up</a>
+            <a *ngIf="!loginService.isLoggedIn()" routerLink="/login" class="dropdown-item">Login</a>
+            <a *ngIf="loginService.isLoggedIn()" routerLink="/dashboard/main" class="dropdown-item">Dashboard</a>
+            <a *ngIf="loginService.isLoggedIn()" routerLink="/enquiry" class="dropdown-item">Enquiry</a>
+            <a *ngIf="loginService.isLoggedIn()" routerLink="/dashboard/profile" class="dropdown-item">Profile</a>
+            <a *ngIf="loginService.isLoggedIn()" (click)="logOut()" class="dropdown-item">Logout</a>
+        </div>
+    </div>
+  </nav>

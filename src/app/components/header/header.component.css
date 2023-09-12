@@ -1,0 +1,52 @@
+
+nav {
+    height: 100%;
+    /* background-color: #6200ee; */
+  }
+  
+  .side-nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .side-nav-button:hover {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 30%;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  }
+  
+  .dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #f1f1f1
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-toggle {
+    background-color: cornsilk;
+    color: black;
+  }

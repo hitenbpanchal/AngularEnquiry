@@ -1,0 +1,80 @@
+app-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 4rem;
+    z-index: 2;
+}
+
+main {
+    position: absolute;
+    width: 100%;
+    top: 4rem;
+    z-index: 1;
+}
+
+app-sidenav {
+    position: absolute;
+    left: 0rem;
+    width: 250px;
+    height: calc(100vh - 4rem);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    background-color: rgba(34,34,34,1);
+    border-top: 1px solid white;
+}
+
+.display-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 310px;
+    top: 26px;
+}
+
+
+.btn {
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #4CAF50;
+    border: 2px solid black;
+}
+
+.enqIcon{
+    /* size: 25px; */
+    width: 30px;
+    height: auto;
+}
+
+li{
+    list-style: none;
+    /* height: 25px;
+    width: 25px; */
+}
+
+.iconspace{
+    margin: 20px;
+}
+
+.nameTag{
+    margin-top: 10px;
+    padding: 5px;
+    font-weight: bolder;
+    color: #150303;
+}

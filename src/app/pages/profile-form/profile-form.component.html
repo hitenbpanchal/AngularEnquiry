@@ -1,0 +1,29 @@
+<div class="row profile-form">
+    <h2 class="text-center">Update Profile Detail</h2>
+    <form class="form-container" (ngSubmit)="submitProfile()">
+        <div class="mb-3">
+            <label for="Name" class="form-label"><b>Full Name</b></label>
+            <input type="text" name="name" [(ngModel)]="profile.name" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="Email" class="form-label"><b>Qualification</b></label>
+            <input type="email" name="qualification" [(ngModel)]="profile.qualification" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="coursename" class="form-label"><b>Course Name</b></label>
+            <input type="text" name="coursename" [(ngModel)]="profile.caurceName" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="address" class="form-label"><b>Address</b></label>
+            <input type="text" name="address" [(ngModel)]="profile.address" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="mobileno" class="form-label"><b>Mobile No</b></label>
+            <input type="text" name="phoneNumber" [(ngModel)]="profile.phoneNumber" class="form-control">
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-outline-success submit-btn">Submit</button>
+        </div>
+    </form>
+    
+</div>
